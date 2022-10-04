@@ -1,0 +1,7 @@
+/* Style for code blocks */
+pre code {
+    background-color: whitesmoke;
+    display: block;
+    width: fit-content;
+    padding: 5px 5em 5px 0;
+}
