@@ -28,7 +28,7 @@
     <p>Below is your typical creation of an object in JavaScript.</p>
     <pre>
     <code>
-        const student = {
+        <span style="color: blue">const</span> student = {
             name: "Aurora",
             id: 0,
         };
@@ -37,7 +37,7 @@
     <p>With TypeScript, you can do an interface declaration. This will provide a defined type.</p>
     <pre>
         <code>
-            interface Student {
+            <span style="color: blue">interface</span> Student {
                 name: string;
                 id: number;
             }
@@ -47,7 +47,7 @@
         type checking.</p>
     <pre>
         <code>
-            const Student {
+            <span style="color: blue">const</span> Student {
                 name: "Aurora",
                 id: 0,
             };
@@ -56,8 +56,28 @@
 </div>
 <!-- End Defining types -->
 
+<!-- Composing Types -->
 <div class="comTypes">
+    <h2>Composing Types</h2>
+    <p>TypeScript allows the manifestation of complex types by combining simple ones. This is through unions and
+        generics.</p>
 
+    <h3>Unions</h3>
+    <p>Unions offer the ability to declare a type that can be one of many things. A simple example as shown below shows
+        that a boolean can either be true or false.</p>
+
+    <pre>
+        <code>
+            <span style="color: blue">type</span> absent = true | false;
+        </code>
+    </pre>
+    <p>This also works for other types, below is an example for class rankings.</p>
+    <pre>
+        <code>
+            <span style="color: blue">type</span> classRanking = "valedictorian" | "salutatorian" | "Not up to snuff" | "deplorable";
+        </code>
+    </pre>
 </div>
+<!-- End Composing Types -->
 
 </body>

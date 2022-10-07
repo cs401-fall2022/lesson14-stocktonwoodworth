@@ -1,7 +1,7 @@
 /* Introduction/page header styling */
 .introduction {
     background-color: aquamarine;
-    border: 2px solid grey;
+    border: 4px solid orange;
     width: 60%;
     padding: 5px;
 }
@@ -9,7 +9,7 @@
 
 /* Defining types section */
 .defTypes {
-    border: 2px solid blue;
+    border: 4px solid aquamarine;
     background-color: orange;
     margin-top: 10px;
     width: 500px;
@@ -31,5 +31,26 @@
 /* End defining types section */
 
 /* Composing Types styling */
+.comTypes {
+    position: absolute;
+    left: 33em;
+    width: 785px;
+    bottom: 16.8em;
+    border: 4px solid black;
+}
 
+.comTypes p, h2, h3 {
+    margin-left: 10px;
+    padding-right: 5px;
+}
+
+/* Style for code blocks */
+.comTypes pre code {
+    text-align: left;
+    background-color: whitesmoke;
+    display: block;
+    width: fit-content;
+    padding: 5px 5em 5px 0;
+    margin-left: 10px;
+}
 /* End composing types styling */
