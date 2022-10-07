@@ -15,15 +15,17 @@
     <h1>Introduction to TypeScript</h1>
     <p class="introP">
         TypeScript serves as an extension to JavaScript by providing type checking and a way to define types.
-        By doing this TypeScript gives the developer the option to add more steps to do the same thing in their
+        By doing this TypeScript gives the developer the option to add more steps, to do the same thing in their
         software. The best part about TypeScript though, it still follows JavaScript's nonsensical semantics for
         consistency.
     </p>
 </div>
+<!-- End Page header and introduction -->
 
 <!-- Defining Types -->
 <div class="defTypes">
     <h2>Defining Types</h2>
+    <p>Below is your typical creation of an object in JavaScript.</p>
     <pre>
     <code>
         const student = {
@@ -32,6 +34,30 @@
         };
     </code>
     </pre>
+    <p>With TypeScript, you can do an interface declaration. This will provide a defined type.</p>
+    <pre>
+        <code>
+            interface Student {
+                name: string;
+                id: number;
+            }
+        </code>
+    </pre>
+    <p>After declaring an interface you can then create an object that is defined by the interface. This will provide
+        type checking.</p>
+    <pre>
+        <code>
+            const Student {
+                name: "Aurora",
+                id: 0,
+            };
+        </code>
+    </pre>
+</div>
+<!-- End Defining types -->
+
+<div class="comTypes">
+
 </div>
 
 </body>

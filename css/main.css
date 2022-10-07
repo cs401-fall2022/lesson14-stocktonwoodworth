@@ -1,7 +1,35 @@
+/* Introduction/page header styling */
+.introduction {
+    background-color: aquamarine;
+    border: 2px solid grey;
+    width: 60%;
+    padding: 5px;
+}
+/* End Introduction/page header styling */
+
+/* Defining types section */
+.defTypes {
+    border: 2px solid blue;
+    background-color: orange;
+    margin-top: 10px;
+    width: 500px;
+}
+
 /* Style for code blocks */
-pre code {
+.defTypes pre code {
     background-color: whitesmoke;
     display: block;
     width: fit-content;
     padding: 5px 5em 5px 0;
+    margin-left: 10px;
 }
+
+.defTypes p, h2 {
+    margin-left: 10px;
+    padding-right: 5px;
+}
+/* End defining types section */
+
+/* Composing Types styling */
+
+/* End composing types styling */
