@@ -32,10 +32,10 @@
 
 /* Composing Types styling */
 .comTypes {
-    position: absolute;
+    position: relative;
     left: 33em;
     width: 785px;
-    bottom: 16.8em;
+    bottom: 46.5em;
     border: 4px solid black;
 }
 
