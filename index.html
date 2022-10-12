@@ -6,6 +6,7 @@
     <title>TypeScript</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href=css/main.css>
 </head>
 
@@ -71,15 +72,13 @@
         that a boolean can either be true or false.</p>
 
     <pre>
-        <code>
-            <span style="color: blue">type</span> absent = true | false;
-        </code>
+        <span style="color: blue">type</span> absent = true | false;
     </pre>
+
     <p>This also works for other types, below is an example for class rankings.</p>
+
     <pre>
-        <code>
-            <span style="color: blue">type</span> classRanking = "valedictorian" | "salutatorian" | "Not up to snuff" | "deplorable";
-        </code>
+        <span style="color: blue">type</span> classRanking = "valedictorian" | "salutatorian" | "deplorable";
     </pre>
 
     <h3>Generics</h3>
@@ -87,10 +86,8 @@
         anything. An array with generics can describe the values that the array contains.</p>
 
     <pre>
-        <code>
-            <span style="color: blue">type</span> NumberArray = Array&lt;number&gt;
-            <span style="color: blue">type</span> ObjectArray = Array<{ name: string}>;
-        </code>
+        <span style="color: blue">type</span> NumberArray = Array&lt;number&gt;
+        <span style="color: blue">type</span> ObjectArray = Array<{ name: string}>;
     </pre>
 </div>
 <!-- End Composing Types -->
