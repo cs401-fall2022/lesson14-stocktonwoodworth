@@ -3,8 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>The Basics</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+<!-- Introduction/Header -->
+<div class="introduction">
+    <h1>The Basics</h1>
+    <ul class="basicLinkList">
+        <li><a href="#staticType">Static type-checking</a></li>
+        <li><a href="#">Types for Tooling</a></li>
+        <li><a href="#">Explicit Types</a></li>
+    </ul>
+</div>
+
+<div class="introImage">
+    <img src="images/typescript-logo.png" alt="TypeScript">
+</div>
+<!-- End Introduction/Header -->
+
+<div class="staticType" id="staticType">
+    <h2>Static type-checking</h2>
+    <pre>
+        <span style="color: blue">const</span> message = "Hail Douglas!"
+
+        <span style="border-bottom: 1px dotted #ff0000;padding:1px">message()</span>
+        <span class="styleSpan">This expression is not callable. Type 'String' has no call signatures.</span>
+    </pre>
+
+    <p>Running that last sample with TypeScript will give us an error message before we run the code in the first place.</p>
+</div>
 
 </body>
 </html>
