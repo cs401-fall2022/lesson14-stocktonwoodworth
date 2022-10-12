@@ -20,6 +20,10 @@
         consistency.
     </p>
 </div>
+
+<div class="introImage">
+    <img src="images/typescript-logo.png" alt="TypeScript">
+</div>
 <!-- End Page header and introduction -->
 
 <!-- Defining Types -->
@@ -77,7 +81,24 @@
             <span style="color: blue">type</span> classRanking = "valedictorian" | "salutatorian" | "Not up to snuff" | "deplorable";
         </code>
     </pre>
+
+    <h3>Generics</h3>
+    <p>Generics provide variables to types. A common example is an array. An array without generics could contain
+        anything. An array with generics can describe the values that the array contains.</p>
+
+    <pre>
+        <code>
+            <span style="color: blue">type</span> NumberArray = Array&lt;number&gt;
+            <span style="color: blue">type</span> ObjectArray = Array<{ name: string}>;
+        </code>
+    </pre>
 </div>
 <!-- End Composing Types -->
 
+<!-- Next Page button -->
+<div class="basicButton">
+    <label for="basicButton">
+        <button type="button" id="basicButton" onclick="window.location.href='basics.html';">To The Basics</button>
+    </label>
+</div>
 </body>

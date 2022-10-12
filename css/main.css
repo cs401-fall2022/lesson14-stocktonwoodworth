@@ -1,9 +1,27 @@
+/* Reset body */
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    overflow: hidden;
+}
+
 /* Introduction/page header styling */
 .introduction {
     background-color: aquamarine;
     border: 4px solid orange;
     width: 60%;
     padding: 5px;
+}
+
+img {
+    float: right;
+    width: 30%;
+}
+
+.introImage {
+    position: relative;
+    bottom: 11em;
+    right: 7em;
 }
 /* End Introduction/page header styling */
 
@@ -54,3 +72,30 @@
     margin-left: 10px;
 }
 /* End composing types styling */
+
+/* Style for buttons */
+button {
+    background-color: #0aa964;
+    color: white;
+    font-family: "Palatino Linotype", sans-serif;
+    font-size: x-large;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15em;
+    height: 10em;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* basicButton location */
+.basicButton {
+    position: relative;
+    float: right;
+    right: 5em;
+    bottom: 80em;
+}
