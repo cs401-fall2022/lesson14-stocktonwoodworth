@@ -1,7 +1,5 @@
 # github-classroom-blank-starter
 
 # Dev Notes
-Tested in FireFox, alignment looks good
-Google: looks different
-
-Goal: fix inconsistencies
+TypeScript and Hello World is showcased in hello.html. To access it from pages
+click on "TypeScript Hello World" at the top of the page.

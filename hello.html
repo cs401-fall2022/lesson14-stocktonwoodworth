@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>
+<html class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test my function</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<style>
+    /* Style for buttons */
+    button {
+        background-color: #0aa964;
+        color: white;
+        font-family: "Palatino Linotype", sans-serif;
+        font-size: x-large;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 7em;
+        height: 3em;
+        opacity: 0.9;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+</style>
+
+<body>
+<h1 id="demo" onclick="turnRed()">Hello World!</h1>
+<button class="spinButton" id="spinButton" onclick="spin()">Click Me!</button>
+
+<script type="module">
+    import {turnRed} from '/build/app.js'
+    import {spin} from "/build/app.js";
+
+    window.spin = spin;
+    window.turnRed = turnRed;
+</script>
+</body>
+
+</html>
