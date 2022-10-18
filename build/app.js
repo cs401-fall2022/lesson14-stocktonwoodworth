@@ -20,7 +20,9 @@ function turnRed() {
         }
     }
 }
-var click = 0;
+
+let click = 0;
+
 function spinClicked() {
     return click > 0;
 }

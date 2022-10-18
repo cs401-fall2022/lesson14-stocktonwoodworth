@@ -9,30 +9,103 @@
 <body>
 
 <!-- Introduction/Header -->
-<div class="introduction">
+<div class="introductionBasics">
     <h1>The Basics</h1>
     <ul class="basicLinkList">
         <li><a href="#staticType">Static type-checking</a></li>
-        <li><a href="#">Types for Tooling</a></li>
+        <li><a href="#tooling">Types for Tooling</a></li>
+        <li><a href="#tsc">tsc, the TypeScript compiler</a></li>
         <li><a href="#">Explicit Types</a></li>
     </ul>
 </div>
 
-<div class="introImage">
+<div class="introImageBasics">
     <img src="images/typescript-logo.png" alt="TypeScript">
 </div>
 <!-- End Introduction/Header -->
 
-<div class="staticType" id="staticType">
-    <h2>Static type-checking</h2>
-    <pre>
+<div class="centerContent">
+    <!-- Static type -->
+    <div class="staticType" id="staticType">
+        <h2>Static type-checking</h2>
+        <pre>
         <span style="color: blue">const</span> message = "Hail Douglas!"
 
         <span style="border-bottom: 1px dotted #ff0000;padding:1px">message()</span>
         <span class="styleSpan">This expression is not callable. Type 'String' has no call signatures.</span>
     </pre>
 
-    <p>Running that last sample with TypeScript will give us an error message before we run the code in the first place.</p>
+        <p>Running that last sample with TypeScript will give us an error message before we run the code in the first
+            place.</p>
+    </div>
+    <!-- End static type -->
+
+    <!-- tooling -->
+    <div class="tooling" id="tooling">
+        <h2>Types for Tooling</h2>
+        <p>TypeScript provides tooling by suggesting specific properties to use. These will match the correlating type
+            as
+            well through type checking.</p>
+        <pre>
+        <span style="color: palevioletred">import</span> express <span style="color: palevioletred">from</span> "express";
+
+        <span style="color: blue">const</span> app = express();
+
+        app.get("/", function(req, res)) {
+            res.sen<span class="suggest" style="color: darkcyan">|</span>send
+                   <span class="suggest" style="color: darkcyan">|sendDate</span>
+                   <span class="suggest" style="color: darkcyan">|sendFile</span>
+        });
+    </pre>
+
+        <p>TypeScript provides “quick fixes” to automatically fix errors, refactorings to easily re-organize
+            code, and useful navigation features for jumping to definitions of a variable, or finding all references to
+            a
+            given variable. All of this is built on top of the type-checker and is fully cross-platform.</p>
+    </div>
+    <!-- End tooling -->
+
+    <!-- tsc compiler -->
+    <div class="tsc" id="tsc">
+        <h2>tsc, the TypeScript compiler</h2>
+        <p>To use the type checker, the first thing that needs to be done is to actually install it.</p>
+
+        <pre>
+        npm install -g typescript
+    </pre>
+        <p>After the installation is completed, we can start by creating a new ts file: <span
+                style="background-color: rgba(173,216,230,0.6)">hailDouglas.ts</span></p>
+
+        <pre>
+        <span style="color: #0aa964">// Hail the all mighty Douglas.</span>
+        console.log(<span style="color: #9a7022">"Hello Douglas, my soul is yours."</span>);
+    </pre>
+
+        <p>We can now type-check this file by issuing the tcs command.</p>
+        <pre>
+        tsc hailDouglas.ts
+    </pre>
+
+        <p>The command shouldn't have any output in this situation because there aren't any type errors. Let's edit
+            <span style="background-color: rgba(173,216,230,0.6)">hailDouglas.ts</span> so there will be errors.</p>
+        <pre>
+        <span style="color: #0aa964">// Cult of Douglas affiliation function.</span>
+        <span style="color: blue">function</span>sell(soul, date) {
+            console.log(<span style="color: #9a7022">`Sell</span> ${soul}<span
+                style="color: #9a7022">", today is </span> ${date}!<span style="color: #9a7022">`</span>);
+        }
+
+        sell(<span style="color: #9a7022">"Bob"</span>);
+    </pre>
+
+        <p>After running <span style="background-color: rgba(173,216,230,0.6)">hailDouglas.ts</span> again, we should
+            get the following
+            output.</p>
+        <pre>
+        Expected 2 arguments, but got 1.
+    </pre>
+    </div>
+    <!-- End tsc compiler -->
 </div>
 
 </body>
