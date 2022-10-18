@@ -5,6 +5,7 @@
   "main": "app.js",
   "author": "Shane K. Panter",
   "license": "MIT",
+  "homepage": "https://cs401-fall2022.github.io/lesson14-stocktonwoodworth/",
   "scripts": {
     "unit": "jest",
     "compile": "tsc",
