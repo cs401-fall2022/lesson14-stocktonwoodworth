@@ -6,6 +6,7 @@
   "author": "Shane K. Panter",
   "license": "MIT",
   "homepage": "https://cs401-fall2022.github.io/lesson14-stocktonwoodworth/",
+  "type": "module",
   "scripts": {
     "unit": "jest",
     "compile": "tsc",
