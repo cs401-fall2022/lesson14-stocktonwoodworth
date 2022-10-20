@@ -3,9 +3,9 @@
  * @returns the String hello
  */
 function hello() {
+    console.log("Return value: Hello World");
     return "Hello World";
 }
-;
 /**
  * turns demo red
  */
@@ -20,9 +20,7 @@ function turnRed() {
         }
     }
 }
-
-let click = 0;
-
+var click = 0;
 function spinClicked() {
     return click > 0;
 }

@@ -1,12 +1,5 @@
 /*-------------------------------- Universal formatting --------------------------------*/
 
-/* Reset body */
-body.indexBody {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    overflow: hidden;
-}
-
 /* clear formatting for anchor */
 a {
     text-decoration: none;
@@ -46,18 +39,29 @@ button:hover {
 /*-------------------------------- End Universal formatting --------------------------------*/
 
 /*-------------------------------- index.html formatting --------------------------------*/
+/* Reset body */
+body.indexBody {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    background-color: rgba(108, 107, 107, 0.25);
+}
+
 /* Introduction/page header styling */
 .introduction {
-    background-color: aquamarine;
-    border: 4px solid orange;
+    background-color: white;
+    border: 4px solid cadetblue;
     width: 60%;
     padding: 5px;
+    margin-top: 5px;
     margin-left: 5px;
 }
 
 img {
     float: right;
-    width: 30%;
+    width: 28%;
+    border: 2px solid cadetblue;
+    margin-top: 5px;
 }
 
 .introImage {
@@ -70,11 +74,11 @@ img {
 
 /* Defining types section */
 .defTypes {
-    border: 4px solid aquamarine;
-    background-color: orange;
+    background-color: white;
+    border: 4px solid cadetblue;
     margin-top: 10px;
     width: 500px;
-    height: 778px;
+    height: 755px;
     margin-left: 5px;
 }
 
@@ -83,6 +87,7 @@ img {
     background-color: whitesmoke;
     display: block;
     width: fit-content;
+    height: 100px;
     padding: 5px 5em 5px 0;
     margin-left: 10px;
 }
@@ -96,11 +101,12 @@ img {
 
 /* Composing Types styling */
 .comTypes {
+    background-color: white;
+    border: 4px solid cadetblue;
     position: relative;
     left: 33em;
     width: 900px;
-    bottom: 49em;
-    border: 4px solid black;
+    bottom: 47.6em;
     height: 750px;
 }
 
@@ -162,7 +168,7 @@ div.introductionBasics {
     display: block;
     width: fit-content;
     padding: 10px 5em 0 0;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .styleSpan {
@@ -179,7 +185,7 @@ div.staticType {
 }
 
 .staticType p {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /* End static type */
@@ -192,7 +198,7 @@ div.staticType {
     display: block;
     width: fit-content;
     padding: 10px 5em 0 0;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 div.tooling {
@@ -204,7 +210,7 @@ div.tooling {
 }
 
 .tooling p {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 /* span suggest */
@@ -220,7 +226,7 @@ div.tooling {
     display: block;
     width: fit-content;
     padding: 10px 5em 0 0;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 div.tsc {
@@ -232,7 +238,7 @@ div.tsc {
 }
 
 .tsc p {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 /* End tsc styling */
 /* Start explicit types styling */
@@ -245,7 +251,7 @@ div.explicit {
 }
 
 .explicit p {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .explicit pre {
@@ -254,5 +260,51 @@ div.explicit {
     display: block;
     width: fit-content;
     padding: 10px 5em 0 0;
+    margin-left: 10px;
+}
+/* End Explicit types */
+
+/* Writing config files */
+div.writeConfig {
+    border: 4px solid cadetblue;
+    width: 40%;
     margin-left: 5px;
+    margin-top: 10px;
+    padding: 10px 5em 0 0;
+}
+
+.writeConfig p {
+    margin-left: 10px;
+}
+
+.writeConfig pre {
+    text-align: left;
+    background-color: whitesmoke;
+    display: block;
+    width: fit-content;
+    padding: 10px 5em 0 0;
+    margin-left: 10px;
+}
+/* End config files */
+
+/* Export from modules */
+div.export {
+    border: 4px solid cadetblue;
+    width: 40%;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 10px 5em 0 0;
+}
+
+.export p {
+    margin-left: 10px;
+}
+
+.export pre {
+    text-align: left;
+    background-color: whitesmoke;
+    display: block;
+    width: fit-content;
+    padding: 10px 5em 0 0;
+    margin-left: 10px;
 }

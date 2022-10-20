@@ -3,8 +3,9 @@
  * @returns the String hello
  */
 function hello (): String {
+    console.log("Return value: Hello World");
     return "Hello World";
-};
+}
 
 /**
  * turns demo red

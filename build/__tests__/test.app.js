@@ -5,8 +5,9 @@ describe('sum module', function () {
         expect(hello()).toBe('Hello World');
     });
 });
-describe('button clicked', function () {
-    test('returns true if button has been clicked', function () {
+// test if button hasn't been clicked
+describe('button not clicked', function () {
+    test('test button not clicked', function () {
         expect(spinClicked()).toBe(false);
     });
 });

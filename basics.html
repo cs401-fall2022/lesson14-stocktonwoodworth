@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Basics</title>
+    <title>Your Journey Starts With Douglas</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -10,12 +10,18 @@
 
 <!-- Introduction/Header -->
 <div class="introductionBasics">
-    <h1>The Basics</h1>
+    <h2>The Basics</h2>
     <ul class="basicLinkList">
         <li><a href="#staticType">Static type-checking</a></li>
         <li><a href="#tooling">Types for Tooling</a></li>
         <li><a href="#tsc">tsc, the TypeScript compiler</a></li>
         <li><a href="#explicit">Explicit Types</a></li>
+    </ul>
+
+    <h2>Migrating from JavaScript</h2>
+    <ul class="basicLinkList">
+        <li><a href="#writeConfig">Writing a Configuration File</a></li>
+        <li><a href="#export">Exporting from Modules</a></li>
     </ul>
 </div>
 
@@ -128,6 +134,51 @@
         </pre>
     </div>
     <!-- End Explicit Types -->
+
+    <!-- Write config -->
+    <div class="writeConfig" id="writeConfig">
+        <h2>Writing a Configuration File</h2>
+        <p>Now that we've covered a bit about TypeScript, let's cover how to configure it. Configuring TypeScript can be
+            done with a <span style="background-color: rgba(173,216,230,0.6)">tsconfig.json</span> file.
+        </p>
+
+        <pre>
+            {
+            <span style="color: blue">"compilerOptions"</span>: {
+             <span style="color: blue">"target"</span>: "es5",
+             <span style="color: blue">"module"</span>:"es2015",
+             <span style="color: blue">"strict"</span>: true,
+             <span style="color: blue">"sourceMap"</span>: true,
+             <span style="color: blue">"outDir"</span>: "build",
+             <span style="color: blue">"moduleResolution"</span>: "node",
+             <span style="color: blue">"strictNullChecks"</span>: false
+            },
+            <span style="color: blue">"exclude"</span>: ["node_modules", "**/*.test.ts"]
+            }
+        </pre>
+    </div>
+    <!-- End write config -->
+
+    <!-- Export from modules -->
+    <div class="export" id="export">
+        <h2>Exporting from Modules</h2>
+        <p>Exporting functions from modules has been made simpler with TypeScript. Below we have the typical way of
+            exporting functions.</p>
+
+        <pre>
+            module.exports.sellSoul = <span style="color: blue">function</span> (souls) {
+                <span style="color: #0aa964">// . . .</span>
+            }
+        </pre>
+
+        <p>You can now write the above like this:</p>
+        <pre>
+            <span style="color: palevioletred">export</span> <span style="color: blue">function</span> sellSoul(souls) {
+                <span style="color: #0aa964">// . . .</span>
+            }
+        </pre>
+    </div>
+    <!-- End Export from modules -->
 </div>
 
 </body>
