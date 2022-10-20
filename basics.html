@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="basicBody">
 
 <!-- Introduction/Header -->
 <div class="introductionBasics">
@@ -27,6 +27,18 @@
 
 <div class="introImageBasics">
     <img src="images/typescript-logo.png" alt="TypeScript">
+</div>
+
+<!-- Comment section -->
+<div class="comments">
+    <h3>Questions and Comments</h3>
+    <label for="comments"></label>
+    <input type="text" id="comments" placeholder="Enter comment">
+    <button id="post">Post</button>
+    <ul id="commentList">
+
+    </ul>
+    <script src="scripts/comments.js"></script>
 </div>
 <!-- End Introduction/Header -->
 
@@ -180,6 +192,8 @@
     </div>
     <!-- End Export from modules -->
 </div>
+
+
 
 </body>
 </html>
