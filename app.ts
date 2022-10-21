@@ -39,4 +39,4 @@ function spin() {
         }, 1);
     }
 }
-export { hello, turnRed, spin, spinClicked };
+//export { hello, turnRed, spin, spinClicked };

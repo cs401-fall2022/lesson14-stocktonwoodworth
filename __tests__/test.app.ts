@@ -1,5 +1,6 @@
 import {describe, expect, test} from '@jest/globals';
-import {hello, spinClicked, spin} from '../app';
+// @ts-ignore
+import {hello, spinClicked} from '../app.js';
 
 describe('sum module', () => {
   test('returns the string hello', () => {

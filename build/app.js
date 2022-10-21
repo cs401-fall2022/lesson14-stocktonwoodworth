@@ -1,3 +1,4 @@
+"use strict";
 /**
  * This returns the string hello
  * @returns the String hello
@@ -11,7 +12,7 @@ function hello() {
  */
 function turnRed() {
     if (document != null) {
-        var c = document.getElementById("demo").style.color;
+        let c = document.getElementById("demo").style.color;
         if (c === 'red') {
             document.getElementById("demo").style.color = "black";
         }
@@ -20,7 +21,7 @@ function turnRed() {
         }
     }
 }
-var click = 0;
+let click = 0;
 function spinClicked() {
     return click > 0;
 }
@@ -36,5 +37,5 @@ function spin() {
         }, 1);
     }
 }
-export { hello, turnRed, spin, spinClicked };
+//export { hello, turnRed, spin, spinClicked };
 //# sourceMappingURL=app.js.map
